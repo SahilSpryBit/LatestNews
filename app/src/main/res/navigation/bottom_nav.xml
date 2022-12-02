@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/allNews">
+
+    <fragment
+        android:id="@+id/allNews"
+        android:name="com.example.latestnewsjava.AllNews"
+        android:label="fragment_all_news"
+        tools:layout="@layout/fragment_all_news" >
+<!--        <action-->
+<!--            android:id="@+id/action_allNews_to_businessNews"-->
+<!--            app:destination="@id/businessNews" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/businessNews"
+        android:name="com.example.latestnewsjava.BusinessNews"
+        android:label="fragment_business_news"
+        tools:layout="@layout/fragment_business_news" >
+<!--        <action-->
+<!--            android:id="@+id/action_businessNews_to_technologyNews"-->
+<!--            app:destination="@id/technologyNews" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/technologyNews"
+        android:name="com.example.latestnewsjava.TechnologyNews"
+        android:label="fragment_technology_news"
+        tools:layout="@layout/fragment_technology_news" >
+<!--        <action-->
+<!--            android:id="@+id/action_technologyNews_to_sportsNews"-->
+<!--            app:destination="@id/sportsNews" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/sportsNews"
+        android:name="com.example.latestnewsjava.SportsNews"
+        android:label="fragment_sports_news"
+        tools:layout="@layout/fragment_sports_news" >
+<!--        <action-->
+<!--            android:id="@+id/action_sportsNews_to_allNews"-->
+<!--            app:destination="@id/allNews" />-->
+    </fragment>
+</navigation>
